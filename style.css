@@ -1,0 +1,17 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+canvas {
+	display: block;
+}
