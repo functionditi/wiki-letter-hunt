@@ -13,7 +13,6 @@ let inkCombos = [
   ["FLUORESCENTPINK", "TEAL"]
 ];
 
-// first colour = circle fill, second colour = outline and line
 // https://antiboredom.github.io/p5.riso/
 function makeInkCombos() {
   let seen = {};
@@ -38,7 +37,7 @@ function makeInkCombos() {
   }
 }
 
-// p5.party references
+// p5.party ref
 // https://p5party.org/examples/callbacks/
 // https://p5party.org/examples/cursors/
 // https://p5party.org/examples/idle_clicker/
@@ -91,7 +90,6 @@ function assignInkCombo() {
     return;
   }
 
-  // people who joined earlier keep their colours
   if (me.colorOrder < 0) {
     let order = 0;
     for (let p = 0; p < guests.length; p++) {
@@ -129,7 +127,7 @@ function assignInkCombo() {
   }
 
   if (conflict == true) {
-    // find the first colour pair that isn't being used
+
     for (let i = 0; i <= guests.length; i++) {
       if (!taken[i]) {
         me.combo = i;
@@ -141,7 +139,6 @@ function assignInkCombo() {
   }
 }
 
-// get the same article version on everyone's screen
 // https://www.mediawiki.org/wiki/API:Parsing_wikitext
 function loadSharedArticle() {
   if (!shared) {
@@ -252,7 +249,7 @@ function syncPlayers() {
   updateScore(players);
 }
 
-// little colour circle next to a player's letter
+
 function inkBadge(player) {
   let combo = inkCombos[player.combo];
   if (!combo) {
