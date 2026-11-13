@@ -271,7 +271,7 @@ function updateScore(players) {
   let message = "Room: " + room;
   message = message + " · Your letter: " + inkBadge(me) + "<b>" + me.letter + "</b>";
   message = message + " · Found " + found + " of " + total + ".";
-  message = message + "<br>Arrow keys steer. Reach an edge to scroll. Hunt lowercase letters.";
+  message = message + "<br> Hey, hey hey!!! Hunt your lowercase letter.";
 
   if (found == total) {
     message = "You found every " + me.letter + "! " + found + " of " + total + ". Room: " + room + ".";
